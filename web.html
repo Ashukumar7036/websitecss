@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ash fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Baloo Bhaina 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('snap/gym.jpg');
+            height: 4000px;
+            background-repeat: no-repeat;
+        }
+
+        .left {
+            position: absolute;
+            left: 30px;
+            top: 10px;
+            display: inline-block;
+            color: white;
+            /* border: 2px solid red; */
+        }
+        .left img{
+            width: 80px;
+            filter: invert(25%);
+
+        }
+.left div{
+    line-height: 13px;
+   font-size: 10px;
+    text-align: center;
+    
+
+}
+
+        .mid {
+            display: block;
+            color: white;
+            /* border: 2px solid red; */
+            margin: 20px auto;
+            width: 40%;
+
+        }
+
+        .right {
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            display: inline-block;
+            color: white;
+            /* border: 2px solid red; */
+
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px 25px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: teal;
+        }
+        .btn{
+            font-family: 'Baloo Bhaina 2', cursive;
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 3px 15px;
+             border: 2px solid rgb(187, 64, 64); 
+            border-radius: 12px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(44, 218, 0);
+        }
+        .container{
+             /* border: 2px solid white;  */
+            width: 600px;
+            height: 330px;
+            border-radius: 40px;
+            margin:20px 0px;
+            padding: 0px 0px;
+            float: left;
+            }        
+        .container h1{
+            color: white;
+           text-align: center;
+        }
+        .button input{
+            text-align: center;
+            display: block;
+            width: 500px;
+            padding: 10px;
+            margin: 5px auto;
+            border: 2px solid black;
+            border-radius: 18px;
+            font-family: 'Baloo Bhaina 2', cursive;
+            
+        }
+        .container .btn{
+            display: block;
+            width: 30%;
+            margin: 10px auto;
+        
+
+        }
+        .container .btn:hover{
+            background-color: rgb(94, 94, 172);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="snap/sport.jpg" alt="">
+            <div>
+                Ash Fitness
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+           <button class="btn">Call  us</button>
+           <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join My Gym</h1>
+    <form action="backend.php">
+        <div class="button">
+            <input type="text" name="myname" placeholder="enter your name " >
+        </div>
+        <div class="button">
+            <input type="text" name="myname" placeholder="enter your name " >
+        </div>
+        <div class="button">
+            <input type="text" name="myname" placeholder="enter your name " >
+        </div>
+        <div class="button">
+            <input type="text" name="myname" placeholder="enter your name " >
+        </div>
+        <button class="btn">Submit</button>
+    </form>
+
+        
+    
+    </div>
+</body>
+
+</html>
